@@ -23,7 +23,7 @@ const Login = () => {
         setLoading(true);
         setError(null);
         try {
-            const res = await axios.post('http://localhost:3000/api/users/login', formData);
+            const res = await axios.post('https://game-app-api-chi.vercel.app/api/users/login', formData);
             localStorage.setItem('token', res.data.token);
             
             console.log(res.data);

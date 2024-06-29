@@ -25,7 +25,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const { data } = await axios.post('http://localhost:3000/api/users/register', formData);
+            const { data } = await axios.post('https://game-app-api-chi.vercel.app/api/users/register', formData);
             toast.success('Account created successfully!', {
                 position: "top-right"
             });
