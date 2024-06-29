@@ -12,9 +12,8 @@ const PORT = process.env.PORT || 3000;
 
 // Allow requests from frontend origin
 const corsOptions = {
-    origin: [ 'http://localhost:5173','https://game-app-sb.vercel.app',],
-    methods: ["POST","GET"],
-    allowedHeaders: ['Content-Type', 'Authorization'],
+    origin: [ 'http://localhost:5173','https://game-app-ten-vert.vercel.app',],
+    methods: ["POST","GET","PUT","DELETE"],
     CredentialS : true
   };
   
